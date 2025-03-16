@@ -80,3 +80,8 @@ void tree_delete(TreeNode **node)
     free(*node);
     *node = NULL;
 }
+
+void node_delete(TreeNode** node)
+{
+    free(*node);
+}

@@ -3,7 +3,6 @@
 #include <string.h>
 #include "tree_transform.h"
 
-
 int tree_must_be_transformed_unary(TreeNode **node)
 {
 
@@ -97,7 +96,7 @@ void transform_multiplication(TreeNode **node){
         term->right = (TreeNode *) malloc(sizeof(TreeNode));
         memcpy(term->right, (*node)->left, sizeof(TreeNode));
     }
-    tree_delete(node);
+    node_delete(node);
     *node = term;
 }
 

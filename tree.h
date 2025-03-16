@@ -16,5 +16,6 @@ void tree_print_subtree(TreeNode *node, int depth);
 void tree_print(TreeNode *node);
 void tree_delete(TreeNode **node);
 void tree_infix_linearization(TreeNode *node);
+void node_delete(TreeNode **node);
 
 #endif
